@@ -1,6 +1,6 @@
 {
   "name": "@topplethenun/css-library-example",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "description": "Example of how to build and publish a CSS library.",
   "repository": "https://github.com/ToppleTheNun/css-library-example",
   "author": "Richard Harrah",
