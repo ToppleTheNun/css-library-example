@@ -1,9 +1,49 @@
 <h1 align="center" style="border-bottom: none;">🛠️ css-library-example</h1>
 <h3 align="center">Example CSS Library with Storybook</h3>
 
+<div align="center">
+    <a href="https://www.npmjs.com/package/@topplethenun/css-library-example">
+        <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@topplethenun/css-library-example">
+    </a>
+    <a href="https://github.com/intuit/auto">
+        <img alt="Auto Release" src="https://img.shields.io/badge/release-auto.svg?colorA=888888&colorB=9B065A&label=auto">
+    </a>
+</div>
+
 **css-library-example** is an example of how to build a CSS library with an accompanying [Storybook].
 
-## Development Guide
+It is not intended for any real use.
+
+## Installation
+
+If you'd still like to install **css-library-example** anyway, you can do so by following one of the below sections.
+
+### npm / yarn
+
+You can install it by running one of the below in your terminal:
+
+```shell
+npm install @topplethenun/css-library-example
+```
+
+or
+
+```shell
+yarn add @topplethenun/css-library-example
+```
+
+### unpkg
+
+You can install it by adding the below to the `<head>` section of your HTML:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@topplethenun/css-library-example/dist/css-library-example.min.css"
+/>
+```
+
+## Contributing
 
 ### Prerequisites
 
@@ -37,10 +77,10 @@ from your terminal:
 $ yarn format
 ```
 
-[Storybook]: https://storybook.js.org/
-[Dart Sass]: https://sass-lang.com/dart-sass
-[PostCSS]: https://postcss.org/
-[Autoprefixer]: https://github.com/postcss/autoprefixer
+[storybook]: https://storybook.js.org/
+[dart sass]: https://sass-lang.com/dart-sass
+[postcss]: https://postcss.org/
+[autoprefixer]: https://github.com/postcss/autoprefixer
 [clean-css]: https://github.com/clean-css/clean-css-cli
 
 ## Contributors ✨
