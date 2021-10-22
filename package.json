@@ -20,9 +20,10 @@
     "prebuild": "rimraf dist",
     "prepare": "is-ci || husky install",
     "prewatch": "rimraf dist",
+    "publish-storybook": "storybook-to-ghpages",
+    "release": "auto shipit --base-branch=main",
     "start": "sass --watch src/css-library-example.scss dist/css-library-example.css",
-    "storybook": "start-storybook -p 6006",
-    "publish-storybook": "storybook-to-ghpages"
+    "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@babel/core": "7.15.8",

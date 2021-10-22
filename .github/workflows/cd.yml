@@ -15,9 +15,6 @@ jobs:
     # Run this job on Ubuntu
     runs-on: ubuntu-latest
 
-    # Only run this job if the commit message doesn't contain "[skip release]"
-    if: "! contains(toJSON(github.event.commits.*.message), '[skip release]')"
-
     # Define steps within the job
     steps:
       # Check out the source code
@@ -39,5 +36,13 @@ jobs:
       - name: Build Storybook
         run: yarn build-storybook
 
+      # Create GitHub release
+      - name: Create Release
+        run: yarn release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # Publish the Storybook to GitHub pages
       - name: Publish Storybook
         run: yarn publish-storybook --ci
