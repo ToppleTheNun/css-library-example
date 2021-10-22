@@ -1,3 +1,15 @@
+# v0.3.0 (Fri Oct 22 2021)
+
+#### 🚀 Enhancement
+
+- bump size to 150px [#6](https://github.com/ToppleTheNun/css-library-example/pull/6) ([@ToppleTheNun](https://github.com/ToppleTheNun))
+
+#### Authors: 1
+
+- Richard Harrah ([@ToppleTheNun](https://github.com/ToppleTheNun))
+
+---
+
 # v0.2.0 (Fri Oct 22 2021)
 
 #### 🚀 Enhancement
