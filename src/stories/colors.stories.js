@@ -22,3 +22,7 @@ export const CandyPink = () => `
 export const Tumbleweed = () => `
   <div class="css-library-example tumbleweed" />
 `;
+
+export const MagicMint = () => `
+  <div class="css-library-example magic-mint" />
+`;
