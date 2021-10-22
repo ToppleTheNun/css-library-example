@@ -21,7 +21,7 @@
     "prepare": "is-ci || husky install",
     "prewatch": "rimraf dist",
     "release": "auto shipit --base-branch=main",
-    "start": "sass --watch src/css-library-example.scss dist/css-library-example.css",
+    "watch": "sass --watch src/css-library-example.scss dist/css-library-example.css",
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
@@ -66,7 +66,8 @@
           "buildCommand": "yarn build-storybook",
           "dir": "./storybook-static"
         }
-      ]
+      ],
+      "magic-zero"
     ],
     "onlyPublishWithReleaseLabel": true
   }
