@@ -2,22 +2,38 @@ export default {
   title: "Gradients",
 };
 
-export const GradientTop = () => `
-    <div class="css-library-example gradient-top">gradient-top</div>
+export const Top = () => `
+    <div class="css-library-example gradient-top" />
 `;
-GradientTop.storyName = "Gradient Top";
 
-export const GradientRight = () => `
-    <div class="css-library-example gradient-right">gradient-right</div>
+export const Right = () => `
+    <div class="css-library-example gradient-right" />
 `;
-GradientRight.storyName = "Gradient Right";
 
-export const GradientBottom = () => `
-    <div class="css-library-example gradient-bottom">gradient-bottom</div>
+export const Bottom = () => `
+    <div class="css-library-example gradient-bottom" />
 `;
-GradientBottom.storyName = "Gradient Bottom";
 
-export const GradientLeft = () => `
-    <div class="css-library-example gradient-left">gradient-left</div>
+export const Left = () => `
+    <div class="css-library-example gradient-left" />
 `;
-GradientLeft.storyName = "Gradient Left";
+
+export const TopRight = () => `
+    <div class="css-library-example gradient-top-right" />
+`;
+
+export const BottomRight = () => `
+    <div class="css-library-example gradient-bottom-right" />
+`;
+
+export const TopLeft = () => `
+    <div class="css-library-example gradient-top-left" />
+`;
+
+export const BottomLeft = () => `
+    <div class="css-library-example gradient-bottom-left" />
+`;
+
+export const Radial = () => `
+    <div class="css-library-example gradient-radial" />
+`;
