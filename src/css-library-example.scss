@@ -1,0 +1,42 @@
+@use "variables";
+
+.css-library-example {
+  min-width: variables.$min-width;
+  height: variables.$height;
+
+  &.y-in-mn-blue {
+    background-color: variables.$y-in-mn-blue;
+  }
+
+  &.chinese-violet {
+    background-color: variables.$chinese-violet;
+  }
+
+  &.rose-dust {
+    background-color: variables.$rose-dust;
+  }
+
+  &.candy-pink {
+    background-color: variables.$candy-pink;
+  }
+
+  &.tumbleweed {
+    background-color: variables.$tumbleweed;
+  }
+
+  &.gradient-top {
+    background: variables.$gradient-top;
+  }
+
+  &.gradient-right {
+    background: variables.$gradient-right;
+  }
+
+  &.gradient-bottom {
+    background: variables.$gradient-bottom;
+  }
+
+  &.gradient-left {
+    background: variables.$gradient-left;
+  }
+}

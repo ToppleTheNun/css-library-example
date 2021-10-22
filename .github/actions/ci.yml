@@ -1,0 +1,35 @@
+# Set name of workflow in GitHub Actions
+name: CI
+
+# Only run this workflow on pushes and pull requests
+on:
+  - push
+  - pull_request
+
+# Define jobs within the workflow
+jobs:
+
+  # Define a job
+  ci:
+    # Run this job on Ubuntu
+    runs-on: ubuntu-latest
+
+    # Only run this job if the commit message doesn't contain "[skip ci]"
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
+
+    # Define steps within the job
+    steps:
+      # Check out the source code
+      - name: Checkout Code
+        uses: actions/checkout@v2 # https://github.com/actions/checkout
+        with:
+          # fetch the entire git history
+          fetch-depth: '0'
+
+      # Install dependencies
+      - name: Install Dependencies
+        uses: bahmutov/npm-install@v1
+
+      # Check if the library builds
+      - name: Build Library
+        run: yarn build
