@@ -1,7 +1,7 @@
 @use "variables";
 
 .css-library-example {
-  min-width: variables.$min-width;
+  width: variables.$width;
   height: variables.$height;
 
   &.y-in-mn-blue {
@@ -38,5 +38,25 @@
 
   &.gradient-left {
     background: variables.$gradient-left;
+  }
+
+  &.gradient-top-right {
+    background: variables.$gradient-top-right;
+  }
+
+  &.gradient-bottom-right {
+    background: variables.$gradient-bottom-right;
+  }
+
+  &.gradient-top-left {
+    background: variables.$gradient-top-left;
+  }
+
+  &.gradient-bottom-left {
+    background: variables.$gradient-bottom-left;
+  }
+
+  &.gradient-radial {
+    background: variables.$gradient-radial;
   }
 }

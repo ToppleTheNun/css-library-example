@@ -3,26 +3,22 @@ export default {
 };
 
 export const YInMnBlue = () => `
-  <div class="css-library-example y-in-mn-blue">y-in-mn-blue</div>
+  <div class="css-library-example y-in-mn-blue" />
 `;
 YInMnBlue.storyName = "Y in MN Blue";
 
 export const ChineseViolet = () => `
-    <div class="css-library-example chinese-violet">chinese-violet</div>
+    <div class="css-library-example chinese-violet" />
 `;
-ChineseViolet.storyName = "Chinese Violet";
 
 export const RoseDust = () => `
-    <div class="css-library-example rose-dust">rose-dust</div>
+    <div class="css-library-example rose-dust" />
 `;
-RoseDust.storyName = "Rose Dust";
 
 export const CandyPink = () => `
-    <div class="css-library-example candy-pink">candy-pink</div>
+    <div class="css-library-example candy-pink" />
 `;
-CandyPink.storyName = "Candy Pink";
 
 export const Tumbleweed = () => `
-  <div class="css-library-example tumbleweed">tumbleweed</div>
+  <div class="css-library-example tumbleweed" />
 `;
-Tumbleweed.storyName = "Tumbleweed";
