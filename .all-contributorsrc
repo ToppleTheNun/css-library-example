@@ -9,6 +9,19 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "none",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "ToppleTheNun",
+      "name": "Richard Harrah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "profile": "https://richardharrah.com/",
+      "contributions": [
+        "example",
+        "code",
+        "doc",
+        "infra"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
