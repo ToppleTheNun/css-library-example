@@ -28,7 +28,12 @@
   },
   "auto": {
     "plugins": [
-      "npm",
+      [
+        "npm",
+        {
+          "setRcToken": false
+        }
+      ],
       "all-contributors",
       "released"
     ]
