@@ -4,7 +4,8 @@
   "description": "Example of how to build and publish a CSS library.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ToppleTheNun/css-library-example.git"
+    "url": "https://github.com/ToppleTheNun/css-library-example.git",
+    "directory": "packages/css-library-example"
   },
   "homepage": "https://github.com/ToppleTheNun/css-library-example#readme",
   "bugs": {
@@ -47,6 +48,9 @@
     "sass-loader": "12.2.0",
     "style-loader": "3.3.1",
     "webpack": "5.59.1"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "style": "dist/css-library-example.min.css"
 }

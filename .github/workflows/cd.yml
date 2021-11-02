@@ -50,10 +50,8 @@ jobs:
           yarn logout
           echo "@topplethenun:registry=http://registry.npmjs.org/" > .npmrc
           echo "registry=http://registry.npmjs.org/" >> .npmrc
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
           npm whoami
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # Create GitHub release
       - name: Create Release
