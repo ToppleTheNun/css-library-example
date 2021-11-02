@@ -3,7 +3,6 @@ name: CI
 
 # Only run this workflow on pushes and pull requests
 on:
-  - push
   - pull_request
 
 # Define jobs within the workflow

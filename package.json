@@ -10,11 +10,12 @@
     "build": "lerna run build",
     "build-storybook": "lerna run build-storybook",
     "prepare": "is-ci || husky install && lerna bootstrap",
-    "release": "npx auto shipit --base-branch=main"
+    "release": "npx auto shipit --base-branch=main --no-changelog"
   },
   "devDependencies": {
     "@auto-it/all-contributors": "10.32.1",
     "@auto-it/gh-pages": "10.32.1",
+    "@auto-it/npm": "10.32.2",
     "@auto-it/released": "10.32.1",
     "auto": "10.32.1",
     "husky": "7.0.4",
@@ -26,11 +27,11 @@
     "pretty-quick": "3.1.1"
   },
   "auto": {
+    "onlyPublishWithReleaseLabel": true,
     "plugins": [
       "npm",
       "all-contributors",
       "released"
-    ],
-    "onlyPublishWithReleaseLabel": true
+    ]
   }
 }
