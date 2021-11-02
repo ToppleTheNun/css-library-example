@@ -47,8 +47,6 @@ jobs:
       # Authenticate with npm registry
       - name: Authenticate with Registry
         run: |
-          echo "@topplethenun:registry=https://registry.npmjs.org/" > .npmrc
-          echo "registry=https://registry.npmjs.org/" >> .npmrc
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
           npm whoami
         env:
