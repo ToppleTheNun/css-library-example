@@ -50,6 +50,7 @@
     "webpack": "5.59.1"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "style": "dist/css-library-example.min.css"
