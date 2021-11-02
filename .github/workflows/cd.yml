@@ -29,8 +29,6 @@ jobs:
       # Install dependencies
       - name: Install Dependencies
         uses: bahmutov/npm-install@v1
-        with:
-          install-command: npm run bootstrap
 
       # Check if the library builds
       - name: Build Library

@@ -7,11 +7,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "build-storybook": "lerna run build-storybook",
-    "prepare": "is-ci || husky install",
-    "release": "auto shipit --base-branch=main"
+    "prepare": "is-ci || husky install && lerna bootstrap",
+    "release": "npx auto shipit --base-branch=main"
   },
   "devDependencies": {
     "@auto-it/all-contributors": "10.32.1",
@@ -29,14 +28,7 @@
     "plugins": [
       "npm",
       "all-contributors",
-      "released",
-      [
-        "gh-pages",
-        {
-          "buildCommand": "yarn build-storybook",
-          "dir": "./storybook-static"
-        }
-      ]
+      "released"
     ],
     "onlyPublishWithReleaseLabel": true
   }
