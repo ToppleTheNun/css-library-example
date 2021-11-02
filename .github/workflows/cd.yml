@@ -44,6 +44,9 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook
 
+      - name: Set NPM Registry for Scope
+        run: npm config set @topplethenun:registry https://registry.npmjs.org/
+
       # Create GitHub release
       - name: Create Release
         run: npm run release
